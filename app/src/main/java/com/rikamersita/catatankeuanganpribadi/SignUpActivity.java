@@ -6,18 +6,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sign_up);
 
         getSupportActionBar().hide();
     }
 
-    public void signup(View view) {
-        Intent daftar = new Intent(this,SignUpActivity.class);
-        startActivity(daftar);
+    public void signin(View view) {
+        Intent login = new Intent(this,MainActivity.class);
+        startActivity(login);
     }
 }
