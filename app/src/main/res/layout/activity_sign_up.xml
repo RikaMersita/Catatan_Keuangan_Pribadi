@@ -135,7 +135,7 @@
         android:drawableStart="@drawable/lock"
         android:ems="10"
         android:hint="   Kata Sandi"
-        android:inputType="textPersonName"
+        android:inputType="textPersonName|textPassword"
         android:paddingLeft="10dp"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
