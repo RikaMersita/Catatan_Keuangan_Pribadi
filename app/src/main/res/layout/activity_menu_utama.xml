@@ -4,168 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF1F1"
+    android:background="#1ECCA8A8"
     tools:context=".MenuUtamaActivity">
 
-    <View
-        android:id="@+id/view3"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/ic_bg_topheader"
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="506dp"
+        android:layout_height="264dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_auth_background" />
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Pribadi"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="302dp"
+        android:layout_height="154dp"
+        android:background="@drawable/btnutama"
+        android:onClick="pemasukan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.109" />
+        app:layout_constraintVertical_bias="0.313"
+        app:srcCompat="@drawable/ic_receive" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="302dp"
+        android:layout_height="154dp"
+        android:background="@drawable/btnutama"
+        android:onClick="pengeluaran"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.107"
+        app:srcCompat="@drawable/ic_out" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="302dp"
+        android:layout_height="154dp"
+        android:background="@drawable/btnutama"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.451"
+        app:srcCompat="@drawable/ic_cttn" />
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="100dp"
-        android:layout_height="70dp"
+        android:layout_width="80dp"
+        android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039"
+        app:layout_constraintVertical_bias="0.024"
         app:srcCompat="@drawable/icon" />
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_width="324dp"
+        android:layout_height="66dp"
         android:gravity="center"
-        android:text="Catatan Keuangan"
+        android:shadowColor="#000000"
+        android:text="Catatan Keuangan Pribadi"
         android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.052" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="220dp"
-        android:layout_height="119dp"
-        android:background="@drawable/btnutama"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24"
-        app:srcCompat="@drawable/ic_satu" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="200dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="252dp"
-        android:background="@drawable/btnutamaa"
-        android:gravity="center"
-        android:text="Pemasukan"
-        android:textColor="#FFFEFE"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795" />
-
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="222dp"
-        android:layout_height="124dp"
-        android:background="@drawable/btnutama"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.522"
-        app:srcCompat="@drawable/ic_dua" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="200dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="428dp"
-        android:background="@drawable/btnutamaa"
-        android:gravity="center"
-        android:text="Pengeluaran"
-        android:textColor="#FFFEFE"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795" />
-
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="228dp"
-        android:layout_height="124dp"
-        android:background="@drawable/btnutama"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.818"
-        app:srcCompat="@drawable/iconsatu" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="200dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="608dp"
-        android:background="@drawable/btnutamaa"
-        android:gravity="center"
-        android:text="Informasi Saldo"
-        android:textColor="#FFFEFE"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795" />
-
-    <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="112dp"
-        android:layout_height="81dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/bawah_bg" />
+        app:layout_constraintVertical_bias="0.8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

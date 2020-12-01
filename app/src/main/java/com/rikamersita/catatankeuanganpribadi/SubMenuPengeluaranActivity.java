@@ -6,22 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class SubMenuPengeluaranActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sub_menu_pengeluaran);
 
         getSupportActionBar().hide();
     }
 
-    public void signup(View view) {
-        Intent daftar = new Intent(this,SignUpActivity.class);
-        startActivity(daftar);
-    }
-
-    public void dashboard(View view) {
+    public void kemenu(View view) {
         Intent menu = new Intent(this,MenuUtamaActivity.class);
         startActivity(menu);
     }
