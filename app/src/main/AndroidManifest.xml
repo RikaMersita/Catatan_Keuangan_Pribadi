@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CatatanKeuanganPribadi">
-        <activity android:name=".SubMenuSaldoActivity"></activity>
+        <activity
+            android:name=".bottomNav"
+            android:label="@string/title_activity_bottom_nav"></activity>
+        <activity android:name=".SubMenuSaldoActivity" />
         <activity android:name=".SubMenuPengeluaranActivity" />
         <activity android:name=".SubMenuPemasukanActivity" />
         <activity android:name=".MenuUtamaActivity" />
