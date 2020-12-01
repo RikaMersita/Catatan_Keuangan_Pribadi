@@ -91,7 +91,6 @@
         android:id="@+id/editTextTextPersonName5"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="420dp"
         android:background="@drawable/btnutama"
         android:ems="10"
         android:gravity="center"
@@ -99,7 +98,7 @@
         android:inputType="number"
         android:textColorHint="#FF5A5656"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView21"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.99"
         app:layout_constraintStart_toStartOf="parent"
@@ -129,7 +128,7 @@
         android:id="@+id/editTextTextPersonName6"
         android:layout_width="348dp"
         android:layout_height="135dp"
-        android:layout_marginBottom="240dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/btnutama"
         android:ems="10"
         android:gravity="center"
@@ -137,12 +136,10 @@
         android:inputType="textPersonName"
         android:textColorHint="#FF5A5656"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
-        app:layout_constraintVertical_bias="0.226" />
+        app:layout_constraintTop_toTopOf="@+id/textView21" />
 
     <TextView
         android:id="@+id/textView21"
