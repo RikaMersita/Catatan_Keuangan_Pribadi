@@ -25,4 +25,9 @@ public class MenuUtamaActivity extends AppCompatActivity {
         Intent keluar = new Intent(this,SubMenuPengeluaranActivity.class);
         startActivity(keluar);
     }
+
+    public void saldo(View view) {
+        Intent saldoo = new Intent(this,SubMenuSaldoActivity.class);
+        startActivity(saldoo);
+    }
 }
