@@ -27,7 +27,7 @@ public class MenuUtamaActivity extends AppCompatActivity {
     }
 
     public void saldo(View view) {
-        Intent saldoo = new Intent(this,SubMenuSaldoActivity.class);
+        Intent saldoo = new Intent(this,bottomNav.class);
         startActivity(saldoo);
     }
 }
